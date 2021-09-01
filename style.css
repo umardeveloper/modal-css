@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vh;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#modal {
+  padding: 40px;
+  background: rgba(51, 51, 51, 0.1);
+  margin: 0 auto;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 100px;
+}
+
+#modal:target {
+  display: block;
+}
+.modal__p {
+  text-align: center;
+}
+.modal__link {
+  display: flex;
+  justify-content: center;
+}
